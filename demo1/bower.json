@@ -1,0 +1,27 @@
+{
+  "name": "helloangular",
+  "version": "0.0.0",
+  "homepage": "https://github.com/diwer/angularjsdemo",
+  "authors": [
+    "diwer <diwers@163.com>"
+  ],
+  "description": "demo0",
+  "main": "app.js",
+  "keywords": [
+    "javascript",
+    "angualrjs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.3",
+    "bootstrap": "~3.3.1",
+    "jquery": "~2.1.1"
+  }
+}

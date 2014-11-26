@@ -1,0 +1,27 @@
+{
+  "name": "demo0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "http-server -p 8081",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/diwer/angularjsdemo.git"
+  },
+  "keywords": [
+    "angularjs"
+  ],
+  "author": "diwer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diwer/angularjsdemo/issues"
+  },
+  "homepage": "https://github.com/diwer/angularjsdemo",
+  "dependencies": {
+    "bower": "^1.3.12",
+    "http-server": "^0.7.3"
+  }
+}

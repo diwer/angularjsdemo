@@ -1,0 +1,55 @@
+<html ng-app="demo0">
+
+<head>
+    <title>demo0</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body ng-controller="hellocontroller">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 center">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">demo0</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form action="" method="POST" role="form">
+                            <legend>hello world</legend>
+
+                            <div class="form-group">
+                                <label for="">请输入点东西</label>
+                                <input type="text" ng-model="hello" class="form-control" id="" placeholder="Input field">
+                            </div>
+
+                            <div class="form-group">
+                                <label>hello,{{hello}}</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    <script type="text/javascript">
+    /**
+     * demo0 Module
+     *
+     * Description
+     */
+    var demo0 = angular.module('demo0', []);
+    demo0.controller('hellocontroller', ['$scope', function($scope) {
+
+    }])
+    </script>
+</body>
+
+</html>

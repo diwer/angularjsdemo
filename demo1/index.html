@@ -1,0 +1,104 @@
+<html ng-app="demo1">
+
+<head>
+    <title>demo1</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <div class="container center">
+        <div class="row">
+
+            <div class="col-md-6 center">
+                <div class="panel panel-primary" ng-controller="HelloController">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">demo1</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form action="" method="POST" role="form">
+                            <legend>hello world</legend>
+
+                            <div class="form-group">
+                                <label for="">请输入点东西</label>
+                                <input type="text" ng-model="hi.text" class="form-control" id="" placeholder="Input field">
+                            </div>
+
+                            <div class="form-group">
+                                <label>{{hi.text}}</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-12 center">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">{{hello}}   rootscope</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="panel panel-primary" ng-controller="fatherController">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title"><strong>{{hello}}</strong> father</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="form-group">
+                                            <label>{{father}}</label>
+                                        </div>
+                                        <div class="col-md-6" ng-controller="son1Controller">
+                                            <div class="panel panel-primary">
+                                                <div class="panel-heading">
+                                                    <h3 class="panel-title">son</h3>
+                                                </div>
+                                                <div class="panel-body">
+
+                                                    <form action="" method="POST" role="form">
+                                                        <legend><strong>{{hello}}</strong> son1</legend>
+
+
+                                                        <div class="form-group">
+                                                            <label>{{son}}</label>
+                                                        </div>
+                                                    </form>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6" ng-controller="son2Controller">
+                                            <div class="panel panel-primary">
+                                                <div class="panel-heading">
+                                                    <h3 class="panel-title">son</h3>
+                                                </div>
+                                                <div class="panel-body">
+
+                                                    <form action="" method="POST" role="form">
+                                                        <legend><strong>{{hello}}</strong> son2</legend>
+
+                                                        <div class="form-group">
+                                                            <label>{{son}}</label>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+        <script type="text/javascript" src="script/controller.js"></script>
+</body>
+
+</html>
